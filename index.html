@@ -1,1 +1,35 @@
-<h1>Hello</h1>
+<title>Get to know me better</title>
+
+<form>
+    <table>
+        <tr>
+            <th>Name field</th>
+            <td><input name='name' type='text' placeholder='type name here'></td>
+        </tr>
+        <tr>
+            <th>Relationship status</th>
+            <td>
+                <input name="status" type="radio" value="single" checked>Single
+            </td>
+            <td>
+                <input name="status" type="radio" value="taken">Taken
+            </td>
+        </tr>
+
+        <tr>
+            <th>Favourite fruits</th>
+            <td>
+                <lable><input name="fruits[]" type="checkbox" value="b" >Banana</lable>
+                <lable><input name="fruits[]" type="checkbox" value="a" >Apple</lable>
+                <lable><input name="fruits[]" type="checkbox" value="m" >Mango</lable>
+                <lable><input name="fruits[]" type="checkbox" value="k" >Kiwi</lable>
+            </td>
+        </tr>
+        <tr colspan="2">
+            <input name="Submit" value="Submit" type="submit">
+        </tr>
+
+    </table>
+
+
+</form>
