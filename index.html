@@ -1,23 +1,19 @@
 <title>Get to know me better</title>
 
 <form>
-    <table>
+    <table style="text-align:left">
         <tr>
-            <th>Name field</th>
+            <th>Name field:</th>
             <td><input name='name' type='text' placeholder='type name here'></td>
         </tr>
         <tr>
-            <th>Relationship status</th>
-            <td>
-                <input name="status" type="radio" value="single" checked>Single
-            </td>
-            <td>
-                <input name="status" type="radio" value="taken">Taken
-            </td>
+            <th>Relationship status:</th>
+            <td><label><input name="status" type="radio" value="single" checked>Single</label></td>
+            <td><label><input name="status" type="radio" value="taken">Taken</label></td>
         </tr>
 
         <tr>
-            <th>Favourite fruits</th>
+            <th>Favourite fruits:</th>
             <td>
                 <lable><input name="fruits[]" type="checkbox" value="b" >Banana</lable>
                 <lable><input name="fruits[]" type="checkbox" value="a" >Apple</lable>
