@@ -20,7 +20,10 @@ body{
 .tablink{
     float: center;
     text-align: center;
-    padding: 12px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: black;
     text-decoration: none;
     font-size: 17px;
@@ -28,6 +31,9 @@ body{
 }
 .tablink:hover{
     color: white;
+}
+.icon{
+    padding-right: 2px;
 }
 h1{
     font-family: 'Courier New', Courier, monospace;
@@ -50,28 +56,17 @@ hr {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
-#about{
-    padding-top: 20%;
-    padding-bottom: 20%;
+.tabcont{
     font-family: 'Courier New', Courier, monospace;
 }
-#edu{
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-family: 'Courier New', Courier, monospace;
+@media screen and (max-width: 500px) {
+    .tab a {
+      float: none;
+      display: block;
+    }
 }
-#work{
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-family: 'Courier New', Courier, monospace;
-}
-#skills{
-    padding-top: 20%;
-    padding-bottom: 20%;
-    font-family: 'Courier New', Courier, monospace;
-}
-#top {
-    display:block; /* Hidden by default */
+#myBtn {
+    display:none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
