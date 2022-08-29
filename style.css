@@ -1,45 +1,92 @@
-body {
-background-color: #f3d1bf;
-background-size: 100% 100%;
+html{
+    scroll-behavior: smooth;
 }
-.pic{
-    display:;
-    font-size: 50px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    vertical-align: right;
-    margin: 30px;
+body{
+    background-color: #f3d1bf;
+    background-size: 100% 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 0%;
+}
+.tab{
+    border: 1px solid;
+    background: #ba9b89;;
+    overflow: hidden;
+    padding: 1px;
+    text-align: center;
+    float: top;
+    height: auto;
+}
+.tablink{
+    float: center;
+    text-align: center;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: monospace;
+}
+.tablink:hover{
+    color: white;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    display: inline;
+    font-size: 60px;
+    padding: 4px;
 }
 img{
     border: 1px black solid;
     border-radius: 50%;
     width:120px;
     height: auto;
-    float: left;
-    margin-left: 30%;
-    alig
-}
-
-h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
-    color: black;
-    font-size: 50px;
-    text-align: right;
-    margin: 20px;
-}
-.class{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center ;
-    height: auto;
-    width: auto;
-    max-width: 1000px;
-    max-height: fit-content;
-    background-color: lightcyan;
-    border-radius: 20px;
-    padding: 10px;
+    display: inline;
 }
 hr {
     border: none;
-    height: 100px;
+    height: 10%;
 }
-
+.body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+#about{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#edu{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#work{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#skills{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#top {
+    display:block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #ba9b89; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    font-family:monospace ;
+  }
+  
+  #top:hover {
+    background-color: white; /* Add a dark-grey background on hover */
+  }
