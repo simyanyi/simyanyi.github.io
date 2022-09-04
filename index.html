@@ -3,8 +3,14 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <script src="https://kit.fontawesome.com/ad573a851c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <script src="operation.js"></script>
 </head>
+
 <div class="tab">
     <a class="tablink" href="#about"><i class="fa-solid fa-circle-user icon"></i>About me</a>
     <a class="tablink" href="#edu"><i class="fa-solid fa-graduation-cap icon"></i>Education journey</a>
@@ -12,43 +18,157 @@
     <a class="tablink" href="#skills"><i class="fa-solid fa-cubes icon"></i></i>Skills</a>
     <a class="tablink" href="#award"><i class="fa-solid fa-award icon"></i>Awards</a>
 </div>
-<hr>
 
 <body>
 
 
-<div class="body">Hi, my name is </div>
+<div class="intro">Hi, my name is </div>
 <h1>Sim Yan Yi</h1>
 
-<hr>
+<div class="section">
 <a id="about" class="tabcont"><h2>About me</h2></a>
-
 <p class="body">
     Curious and adventure-loving. I love exploring the new and trying the untested. Always up for opportunities that can help me grow and improve my skills as an aspiring business or data analyst. <br>
     <br>Currently, I am a sophomore majoring in Bachelor of Science (Information System) at Singapore Management Univeristy(SMU), who is keen to improve on and learn more programming languages while developing a more analytical mindset in order to wield what I learn in real-life situations to help ideate solutions. Possesses strong leadership skills and deep critical thinking with proven success in past academic projects and leadership appointments. I am optimistic in working well with others and willing to take on challenges to try out the new. 
 </p>
-
-<hr>
+</div>
 
 <a id="edu" class="tabcont"><h2>Education journey</h2></a>
-<p class="body">
-    
-</p>
 
-<hr>
 
+<div class="timeline">
+  
+  <div class="container-bot">
+    <div class="content">
+      <h3 id="ahs">Anglican High School</h3>
+      <h4>2014-2018</h4>
+      <p class="body">Graduated under the Triple Science course<br>
+        Leadership experience:
+        <ul>
+          <li>Director of Training and Development of Student Council</li>
+          <ul>
+            <li>Organised training camps for new student councilors</li>
+            <li>Organised mass school events, such as Open House and student council investiture</li>
+          </ul>
+          <li>Vice-President of Innovation & Enterprise Club</li>
+          <ul>
+            <li>Clinched best presentation award at SMU Innovation challenge 2017</li>
+            <li>Participated in multiple Innovation challenge and school events, such as the annual Innovation Week and CCA carnival</li>
+          </ul>
+        </ul>
+      </p>
+    </div>
+  </div>
+  
+  <div class="container-top">
+    <div class="content">
+      <h3 id="vjc">Victoria Junior College</h3>
+      <h4>2019-2021</h4>
+      <p class="body">Graduated under the Biology, Chemistry, Math, Economics (BCME) course
+        <br>Leader experience:
+        <ul>
+          <li>Vice-President of Harmonica Band</li>
+          <ul>
+            <li>Scheduled trainings and volunteering</li>
+            <li>Organised mass school events, such as Open House and annual performances</li>
+          </ul>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="container-bot">
+    <div class="content">
+      <h3 id="smu">Singapore Management Univeristy</h3>
+      <h4>2021-2025</h4>
+      <p class="body">Majoring in Business Analytics
+        <br>Leader experience:
+        <ul>
+          <li>Leader of Project Wan Mai XII</li>
+          <ul>
+            <li>Led a team of 12 alongside 3 other leaders to help Laotian University students</li>
+            <li>Curated teaching materials to teach them English, Hospitality, Cultural Exchange and Financial Literacy</li>
+          </ul>
+          <li>Director of SICS Sponsorship Welfare Drive 2022</li>
+          <ul>
+            <li>Scheduled trainings and volunteering</li>
+            <li>Organised mass school events, such as Open House and annual performances</li>
+          </ul>
+          <li>Deputy of Finance for Martial Mayhem 2022</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+</div>
+<section class="cd-horizontal-timeline">
+  <script src="operation.js"></script>
+	<div class="timeline">
+		<div class="events-wrapper">
+			<div class="events">
+				<ol>
+					<li><a href="#0" data-date="2018" class="selected">2018</a></li>
+					<li><a href="#0" data-date="2020">2020</a></li>
+					<li><a href="#0" data-date="2025">Dec 2017</a></li>
+				</ol>
+
+				<span class="filling-line" aria-hidden="true"></span>
+			</div> <!-- .events -->
+		</div> <!-- .events-wrapper -->
+			
+		<ul class="cd-timeline-navigation">
+			<li><a href="#0" class="prev inactive">Prev</a></li>
+			<li><a href="#0" class="next">Next</a></li>
+		</ul> <!-- .cd-timeline-navigation -->
+	</div> <!-- .timeline -->
+
+	<div class="events-content">
+		<ol>
+			<li class="selected" data-date="2018">
+				<h2>An Introduction to Infosec</h2>
+        <em>January, 2017</em>
+				<p>	
+					Back in January, 2017 I began my journey of studies into different areas of infosec to see if it was a challenge I would enjoy and a future prospect for further learning through college.
+				</p>
+			</li>
+
+			<li data-date="2020">
+				<h2>Fanshawe College Cyber Security</h2>
+				<em>September, 2017</em>
+				<p>	
+					In September, 2018 I enrolled into the Cyber Security course at Fanshawe College.
+				</p><br>
+        <p>Key courses include: </p>
+			</li>
+
+			<li data-date="2025">
+				<h2>CTF</h2>
+				<em>December, 2017</em>
+				<p>	
+					Participated in CTF.
+				</p>
+			</li>
+		</ol>
+	</div> <!-- .events-content -->
+</section>
+	
+
+
+<div class="section">
 <a id="work" class="tabcont"><h2>Work experience</h2></a>
+</div>
 
-<hr>
-
+<div class="section">
 <a id="skills" class="tabcont"><h2>Skills</h2></a>
+</div>
 
-<hr>
-
+<div class="section">
 <a id="award" class="tabcont"><h2>Awards</h2></a>
+</div>
+
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 </body>
-
+<script src="operation.js"></script>
 </html>
