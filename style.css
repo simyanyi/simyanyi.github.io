@@ -1,30 +1,40 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+a {
+    text-decoration: none;
+}
+
+body {
     background-color: #f3d1bf;
     background-size: 100% 100%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 0%;
 }
-.intro{
+
+.intro {
     padding-top: 5%;
     font-family: 'Noto Sans', sans-serif;
 }
-.section{
+
+.section {
     height: 100%;
 }
-.tab{
+
+.tab {
     border: 1px solid;
-    background: #ba9b89;;
+    background: #ba9b89;
+    ;
     overflow: hidden;
     padding: 1%;
     text-align: center;
     float: top;
     height: auto;
 }
-.tablink{
+
+.tablink {
     float: center;
     text-align: center;
     padding-top: 16px;
@@ -34,72 +44,147 @@ body{
     color: black;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'Noto Sans', sans-serif;;
+    font-family: 'Noto Sans', sans-serif;
+    ;
 }
-.tablink:hover{
+
+.tablink:hover {
     color: white;
 }
-.icon{
+
+.icon {
     padding-right: 2px;
 }
-h1{
+
+h1 {
     font-family: 'Noto Sans', sans-serif;
     display: inline;
     font-size: 60px;
 }
-h2{
+
+h2 {
     padding-top: 5%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
 }
-h3{
-  font-family: 'Noto Sans', sans-serif;
-  padding: 0px;
-  margin:0px
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px
 }
-h4{
+
+h4 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 15px;
     padding: 0px;
-    margin:0px;
+    margin: 0px;
 }
+
 hr {
     border: none;
     height: 10%;
 }
-.body{
+
+.body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     margin-bottom: 0px;
 }
-ul{
+
+ul {
     margin-top: 3px;
 }
-.tabcont{
+
+.tabcont {
     font-family: 'Noto Sans', sans-serif;
 }
+
 @media screen and (max-width: 500px) {
     .tab a {
-      float: none;
-      display: block;
+        float: none;
+        display: block;
     }
 }
+
 #myBtn {
-    display:none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #ba9b89; /* Set a background color */
-    color: black; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-    font-family:monospace ;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #ba9b89;
+    /* Set a background color */
+    color: black;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    font-family: monospace;
 }
+
 #myBtn:hover {
-background-color: white; /* Add a dark-grey background on hover */
+    background-color: white;
+    /* Add a dark-grey background on hover */
 }
 
 /* timeline */
+.horizontal-timeline .items {
+    border-top: 3px solid #e9ecef;
+}
+
+.horizontal-timeline .items .items-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+}
+
+.horizontal-timeline .items .items-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+
+.horizontal-timeline .items .items-list .event-date {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    padding-top: 8px;
+}
+
+@media (min-width: 1140px) {
+    .horizontal-timeline .items .items-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+
+    .horizontal-timeline .items .items-list .event-date {
+        top: -40px;
+    }
+}
