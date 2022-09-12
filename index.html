@@ -16,19 +16,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 </head>
 
-<div class="tab">
-  <a class="tablink" href="#about"><i class="fa-solid fa-circle-user icon"></i>About me</a>
-  <a class="tablink" href="#edu"><i class="fa-solid fa-graduation-cap icon"></i>Education journey</a>
-  <a class="tablink" href="#work"><i class="fa-solid fa-briefcase icon"></i>Work experience</a>
-  <a class="tablink" href="#skills"><i class="fa-solid fa-cubes icon"></i></i>Skills</a>
-  <a class="tablink" href="#award"><i class="fa-solid fa-award icon"></i>Awards</a>
-</div>
+<nav class="navbar navbar-nav navbar-expand-lg ">
+  <div class="container-fluid text-dark">
+    <a class="navbar-brand" href="#top"><i class="fa-solid fa-house"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item px-2">
+          <a class="nav-link" aria-current="page" href="#about"><i class="fa-solid fa-circle-user icon"></i>About
+            me</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#edu"><i class="fa-solid fa-graduation-cap icon"></i>Education journey</a>
+        </li>
 
-<body>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#work"><i class="fa-solid fa-briefcase icon"></i>Work experience</a>
+        </li>
+
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#skills"><i class="fa-solid fa-cubes icon"></i></i>Skills</a>
+        </li>
+
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#award"><i class="fa-solid fa-award icon"></i>Awards</a>
+        </li>
+        <li class="nav-item dropdown px-2">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i
+              class="fa-solid fa-circle-info"></i>
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="image/resume.pdf">Resume</a></li>
+            <li><a class="dropdown-item" href="https://sg.linkedin.com/in/simyanyi?trk=people-guest_people_search-card"
+                target="_blank">LinkedIn</a></li>
+            <li><a class="dropdown-item"
+                href="https://mail.google.com/mail/u/0/?hl=en&tf=cm&fs=1&to=simyanyi02@gmail.com"
+                target="_blank">Email</a></li>
+          </ul>
+        </li>
 
 
-  <div class="intro">Hi, my name is </div>
-  <h1>Sim Yan Yi</h1>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<body class="container">
+  <div class="row my-4">
+    <div class="col">
+      <img src="image/dog_cafe.jpg">
+    </div>
+
+    <div id='top' class="intro col">
+      Hi there! <br>Nice to meet you, I'm <br>
+      <h1>Sim Yan Yi</h1>
+    </div>
+
+    <div class="col">
+      <img src="image/cruise.jpg">
+    </div>
+  </div>
 
   <div class="section">
     <a id="about" class="tabcont">
@@ -149,11 +206,52 @@
       </div>
     </div>
   </div>
-<hr>
+  <hr>
   <div class="section">
     <a id="work" class="tabcont">
       <h2>Work experience</h2>
     </a>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
   </div>
 
   <div class="section">
