@@ -28,3 +28,4 @@ function changeImage2() {
 function changeImage3() {
   document.getElementById('photo').src = "image/smu.JPG"
 }
+

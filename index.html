@@ -29,11 +29,11 @@
             me</a>
         </li>
         <li class="nav-item px-2">
-          <a class="nav-link" href="#edu"><i class="fa-solid fa-graduation-cap icon"></i>Education journey</a>
+          <a class="nav-link" href="#edu"><i class="fa-solid fa-graduation-cap icon"></i>Education Journey</a>
         </li>
 
         <li class="nav-item px-2">
-          <a class="nav-link" href="#work"><i class="fa-solid fa-briefcase icon"></i>Work experience</a>
+          <a class="nav-link" href="#work"><i class="fa-solid fa-briefcase icon"></i>Work Experience</a>
         </li>
 
         <li class="nav-item px-2">
@@ -63,7 +63,7 @@
 
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
+        <button class="btn btn-outline-dark" id="search" type="submit">Search</button>
       </form>
     </div>
   </div>
@@ -72,112 +72,192 @@
 
 <body class="container mt-0">
   <div class="row my-4">
-    <div class="col">
-      <img src="image/dog_cafe.jpg">
-    </div>
-
-    <div id='top' class="intro col">
-      Hi there! <br>Nice to meet you, I'm <br>
-      <h1>Sim Yan Yi</h1>
-    </div>
-
-    <div class="col">
-      <img src="image/cruise.jpg">
-    </div>
-  </div>
-
-  <div class="section">
-    <a id="about" class="tabcont">
-      <h2>About me</h2>
-    </a>
-    <p>
-      Curious and adventure-loving. I love exploring the new and trying the untested. Always up for opportunities that
-      can help me grow and improve my skills as an aspiring business or data analyst. <br>
-      <br>Currently, I am a sophomore majoring in Bachelor of Science (Information System) at Singapore Management
-      Univeristy(SMU), who is keen to improve on and learn more programming languages while developing a more analytical
-      mindset in order to wield what I learn in real-life situations to help ideate solutions. Possesses strong
-      leadership skills and deep critical thinking with proven success in past academic projects and leadership
-      appointments. I am optimistic in working well with others and willing to take on challenges to try out the new.
-    </p>
-  </div>
-
-  <a id="edu" class="tabcont">
-    <h2>Education journey</h2>
-  </a>
-
-  <div class="container">
-    <div class="row mx-auto my-4 d-block sch_img">
-      <img id="photo" src="image/ahs.JPG">
-    </div>
-
-
-    <div class="row">
-      <div class="col">
-        <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
-          <div class="timeline-step">
-            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
-              data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
-              <div class="inner-circle"></div>
-              <p class="h6 mt-3 mb-1">2018</p>
-              <p class="h6 text-muted mb-0 mb-lg-1">Anglican High School</p>
-              <a id="read1" class="btn btn-primary mt-3" data-bs-toggle="collapse" href="#ahs" role="button"
-                aria-expanded="false" aria-controls="collapseExample" onclick="changeImage1()">
-                Read more
-              </a>
-              <div class="collapse" id="ahs">
-                <div class="card card-body">
-                  Graduated with high distinction in the Triple Science course.
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
-              data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
-              <div class="inner-circle"></div>
-              <p class="h6 mt-3 mb-1">2020</p>
-              <p class="h6 text-muted mb-0 mb-lg-1">Victoria Junior College</p>
-              <a id="read2" class="btn btn-primary" data-bs-toggle="collapse" href="#vjc" role="button"
-                aria-expanded="false" aria-controls="collapseExample" onclick="changeImage2()">
-                Read more
-              </a>
-              <div class="collapse" id="vjc">
-                <div class="card card-body">
-                  Graduated with high distinction in the Biology, Chemistry, Mathematics, & Economics (BCME) course.
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title=""
-              data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
-              <div class="inner-circle"></div>
-              <p class="h6 mt-3 mb-1">2025</p>
-              <p class="h6 text-muted mb-0 mb-lg-1">Singapore Management University</p>
-              <a id='read3' class="btn btn-primary" data-bs-toggle="collapse" href="#smu" role="button"
-                aria-expanded="false" aria-controls="collapseExample" onclick="changeImage3()">
-                Read more
-              </a>
-              <div class="collapse" id="smu">
-                <div class="card card-body">
-                  Bachelor in Information System(Sci).
-                  Majoring in Business Analytics.
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
+    <div class="overlay css-selector">
+      <div class="overlay__inner" id="top">
+        Hi there! <br>Nice to meet you, I'm <br>
+        <h1>Sim Yan Yi</h1>
       </div>
     </div>
   </div>
 
+  <div class="section mb-5">
+    <a id="about" class="tabcont">
+      <h2>About me</h2>
+    </a>
+    <p class="mt-5 mb-5">
+      Curious and adventure-loving. I love exploring the new and trying the untested. Always up for opportunities that
+      can help me grow and improve my skills as an aspiring business or data analyst. <br>
+      <br>Currently, I am a sophomore majoring in Bachelor of Science (Information System) at Singapore Management
+      Univeristy(SMU), who is keen to improve on and learn more programming languages while developing a more
+      analytical
+      mindset in order to wield what I learn in real-life situations to help ideate solutions. Possesses strong
+      leadership skills and deep critical thinking with proven success in past academic projects and leadership
+      appointments. I am optimistic in working well with others and willing to take on challenges to try out the new.
+    </p>
+
+    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
+      <!-- Controls -->
+      <div class="d-flex justify-content-center mb-4">
+        <button class="carousel-control-prev position-relative" type="button"
+          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next position-relative" type="button"
+          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner py-4 mb-5">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="image/cruise.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">ME!</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="image/aikido1.JPG" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">My current SMU CCA</h5>
+                  </div>
+                </div>
+              </div>
 
 
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="image/tuition.jpeg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Current work</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="image/anime.jpeg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">LOVE ANIME!</h5>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="image/food1.jpg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">LOVE food!!</h5>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-4">
+                <div class="card">
+                  <img src="image/tuition.jpeg" class="card-img-top">
+                  <div class="card-body">
+                    <h5 class="card-title">Tries baking as well</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+<hr>
+  <div class="section mt-5">
+    <a id="edu" class="tabcont">
+      <h2 class="mb-5">Education Journey</h2>
+    </a>
+
+    <div class="container">
+      <div class="row mx-auto my-4 d-block sch_img">
+        <img id="photo" src="image/ahs.JPG">
+      </div>
+
+
+
+      <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+        <div class="timeline-step">
+          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top">
+            <div class="inner-circle"></div>
+            <p class="h6 mt-3 mb-2">2018</p>
+            <p class="h6 font-weight-bold mb-2 col">Anglican High School</p>
+            <a id="read1" class="btn btn-primary mt-3" data-bs-toggle="collapse" href="#ahs" role="button"
+              aria-expanded="false" aria-controls="collapseExample" onclick="changeImage1()">
+              Read more
+            </a>
+            <div class="collapse" id="ahs">
+              <div class="card card-body">
+                Graduated with high distinction in the Triple Science course.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top">
+            <div class="inner-circle"></div>
+            <p class="h6 mt-3 mb-2">2020</p>
+            <p class="h6 font-weight-bold mb-2 col">Victoria Junior College</p>
+            <a id="read2" class="btn btn-primary" data-bs-toggle="collapse" href="#vjc" role="button"
+              aria-expanded="false" aria-controls="collapseExample" onclick="changeImage2()">
+              Read more
+            </a>
+            <div class="collapse" id="vjc">
+              <div class="card card-body">
+                Graduated with high distinction in the Biology, Chemistry, Mathematics, & Economics (BCME) course.
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top">
+            <div class="inner-circle"></div>
+            <p class="h6 mt-3 mb-2">2025</p>
+            <p class="h6 font-weight-bold mb-2 col">Singapore Management University</p>
+            <a id='read3' class="btn btn-primary" data-bs-toggle="collapse" href="#smu" role="button"
+              aria-expanded="false" aria-controls="collapseExample" onclick="changeImage3()">
+              Read more
+            </a>
+            <div class="collapse" id="smu">
+              <div class="card card-body">
+                Bachelor in Information System(Sci).
+                Majoring in Business Analytics.
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
   <hr>
@@ -185,9 +265,9 @@
 
   <div class="section my-5">
     <a id="work">
-      <h2>Work experience</h2>
+      <h2>Work Experience</h2>
     </a>
-    <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide my-4" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -197,7 +277,7 @@
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="3000">
           <img src="image/work.JPG" class="d-block w-100 mx-auto">
           <div class="carousel-caption d-none d-md-block">
             <h5>Operation Coordinator</h5>
@@ -206,7 +286,7 @@
               patients' enquiries.</p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="image/snp.jpeg" class="d-block w-100 mx-auto">
           <div class="carousel-caption d-none d-md-block ">
             <h5>Ecommerce Intern</h5>
@@ -220,9 +300,11 @@
             <div class="collapse text-left text-black" id="collapseExample">
               <div class="card card-body">
                 <ul>
-                  <li>Created workflow models to facilitate integration of features on an external platform into our own
+                  <li>Created workflow models to facilitate integration of features on an external platform into our
+                    own
                     platform to help improve business efficiency</li>
-                  <li>Partnered with Lazada as a live-streamer to push forth a new Korean brand (Heureux) we consigned
+                  <li>Partnered with Lazada as a live-streamer to push forth a new Korean brand (Heureux) we
+                    consigned
                     with
                     as part of Lazada’s brand incubation campaign. </li>
                   <li>Designed a brand’s webstore page and banners for online campaigns</li>
@@ -234,7 +316,7 @@
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="3000">
           <img src="image/tuition.jpeg" class="d-block w-80 mx-auto">
           <div class="carousel-caption d-none d-md-block">
             <h5>Secondary School Math Tutor</h5>
@@ -260,141 +342,111 @@
   <hr>
   <div class="section">
     <a id="skills">
-      <h2>Skills</h2>
+      <h2 class="mb-5">Skills</h2>
     </a>
-    <br>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h3>Hard Skills</h3>
-          <ul>
-            <li>Python</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Proficient</div>
-            </div>
-            <li>HTML, CSS</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Good</div>
-            </div>
-            <li>MySQL</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Excellent</div>
-            </div>
-            <li>Microsoft office (Excel, Doc, Powerpoint)</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Good</div>
-            </div>
-            <li>Video editing</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 70%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Good</div>
-            </div>
-            <li>Marketing & Sponsorship</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Proficient</div>
-            </div>
-            <li>Writing skills</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 80%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Good</div>
-            </div>
-          </ul>
-        </div>
 
-        <div class="col">
-          <h3>Soft skills</h3>
-          <ul>
-            <li>Leadership</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Proficient</div>
-            </div>
-            <li>Teamwork</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Proficient</div>
-            </div>
-            <li>Communication</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 85%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Excellent</div>
-            </div>
-            <li>Management</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 75%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Good</div>
-            </div>
-          </ul>
-        </div>
+    <!-- <div class="overlay__inner "> -->
 
-        <div class="col">
-          <h3>Languages</h3>
-          <ul>
-            <li>English</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                Native speaker
-              </div>
-            </div>
+    <div class="overlay hardskill row p-5 mb-3">
+      <div class="overlay__inner p-0 col">
+        <h3 class="fs-1 fw-bold mb-3 ">Hard Skills</h3>
+        <ul>
+          <li>Python</li>
+          <li>HTML, CSS, Javascript</li>
+          <li>MySQL</li>
+          <li>Microsoft office (Excel, Doc, Powerpoint)</li>
+          <li>Video editing</li>
+          <li>Marketing & Sponsorship</li>
+          <li>Writing skills</li>
+        </ul>
+      </div>
+    </div>
 
-            <li>Chinese</li>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;"
-                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                Native speaker
-              </div>
-            </div>
-        </div>
+    <div class="overlay softskill row p-5">
+      <div class="overlay__inner p-0 col">
+        <h3 class="fs-1 fw-bold mb-3 ">Soft Skills</h3>
+        <ul>
+          <li>Leadership</li>
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Management</li>
         </ul>
       </div>
 
-
-    </div>
-  </div>
-  </div>
-
-  <div class="section">
-    <a id="award">
-      <h2>Awards</h2>
-    </a>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="image/ellipsis.png" class="image">
-          <div class="overlay">Top 30 in SMU Ellipsis Tech Series 2022</div>
-        </div>
-        <div class="col">
-          <img src="image/shopee.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Participated in Shopee Code League 2022</div>
-          </div>
-        </div>
-        <div class="col">
-          <img src="image/Wit.png" class="image">
-          <div class="overlay">Participation in SMU WiT Captire-the-flag Challenge 2021</div>
-        </div>
+      <div class="overlay__inner p-0 col">
+        <h3 class="fs-1 fw-bold mb-3 ">Languages</h3>
+        <ul>
+          <li>English
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </li>
+          <li>Chinese
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </li>
+        </ul>
       </div>
 
     </div>
-  </div>
+
+    <div class="section">
+      <a id="award">
+        <h2>Awards</h2>
+      </a>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <figure class="figure">
+              <img src="image/ellipsis.png" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Top 30 in SMU Ellipsis Tech Series 2022</figcaption>
+            </figure>
+          </div>
+
+          <div class="col">
+            <figure class="figure">
+              <img src="image/shopee.jpg" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Participated in Shopee Code League 2022</figcaption>
+            </figure>
+          </div>
+
+          <div class="col">
+            <figure class="figure">
+              <img src="image/Wit.png" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">Participation in SMU WiT Captire-the-flag Challenge 2021
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <div class="col">
+            <figure class="figure">
+              <img src="image/finlit.jpg" class="figure-img img-fluid rounded">
+              <figcaption class="figure-caption">3rd Place in 2022 Financial Challenge University</figcaption>
+            </figure>
+
+          </div>
+
+        </div>
+      </div>
 
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-  <script src="operation.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/ad573a851c.js" crossorigin="anonymous"></script>
+      <script src="operation.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/ad573a851c.js" crossorigin="anonymous"></script>
 
 
+    </div>
 </body>
 
 

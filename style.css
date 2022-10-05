@@ -2,6 +2,23 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    margin: auto;
+}
+
+.btn {
+    background-color: rgb(228, 160, 2);
+    color: black;
+    border-color: rgb(228, 160, 2);
+}
+#search{
+    background-color: transparent;
+    border-color: black;
+}
+#search:hover{
+    background-color: transparent;
+    border-color: white;
+}
 a {
     text-decoration: none;
 }
@@ -12,11 +29,16 @@ body {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 0%;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-.intro {
-    padding-top: 5%;
-    font-family: 'Noto Sans', sans-serif;
+.figure {
+    text-align: center;
+}
+
+#top {
+    margin: auto;
+    color: white;
 }
 
 .carousel {
@@ -41,13 +63,26 @@ img {
     max-width: 80%;
     display: inline;
 }
-.sch_img{
-    width: 50%;
-    
+
+/* about me images carousel */
+.card-img-top{
+    max-width: 100%;
+    display: inline;
 }
+.card-body{
+    background-color:  #ba9b89;
+    border: transparent;
+}
+
+
+.sch_img {
+    width: 50%;
+}
+
 .timeline-content p {
     font-family: 'Noto Sans', sans-serif;
 }
+
 .nav-link {
     color: black;
 }
@@ -131,7 +166,6 @@ ul {
     /* Rounded corners */
     font-size: 18px;
     /* Increase font size */
-    font-family: monospace;
 }
 
 #myBtn:hover {
@@ -148,7 +182,13 @@ ul {
 }
 
 /* timeline */
-body{margin-top:20px;}
+body {
+    margin-top: 20px;
+}
+.inner-circle{
+    margin-bottom: 10px;
+}
+
 .timeline-steps {
     display: flex;
     justify-content: center;
@@ -167,16 +207,17 @@ body{margin-top:20px;}
     .timeline-steps .timeline-step:not(:last-child):after {
         content: "";
         display: block;
-        border-top: .25rem dotted #3b82f6;
+        border-top: .25rem dotted rgb(228, 160, 2);
         width: 3.46rem;
         position: absolute;
         left: 7.5rem;
         top: .3125rem
     }
+
     .timeline-steps .timeline-step:not(:first-child):before {
         content: "";
         display: block;
-        border-top: .25rem dotted #3b82f6;
+        border-top: .25rem dotted rgb(228, 160, 2);
         width: 3.8125rem;
         position: absolute;
         right: 7.5rem;
@@ -196,12 +237,15 @@ body{margin-top:20px;}
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #3b82f6
+    background-color: rgb(84, 81, 46)
+}
+.timeline-content{
+    width: 20px;
 }
 
 .timeline-steps .timeline-content .inner-circle:before {
     content: "";
-    background-color: #3b82f6;
+    background-color: rgb(228, 160, 2);
     display: inline-block;
     height: 3rem;
     width: 3rem;
@@ -210,4 +254,68 @@ body{margin-top:20px;}
     opacity: .5
 }
 
+/* top span deco */
+:root {
+    --dark-color: hsl(var(--hue), 100%, 9%);
+    --light-color: hsl(var(--hue), 95%, 98%);
+    --base: hsl(var(--hue), 95%, 50%);
+    --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
+    --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
 
+    --font-family: "Poppins", system-ui;
+
+    --bg-gradient: linear-gradient(to bottom,
+            hsl(var(--hue), 95%, 99%),
+            hsl(var(--hue), 95%, 84%));
+}
+
+.css-selector {
+    background: linear-gradient(270deg, #15ecb5, #2f4add, #c465e1);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.overlay {
+    width: 100%;
+    max-width: 1140px;
+    max-height: 640px;
+    padding: 8rem 6rem;
+    display: flex;
+    align-items: center;
+    /* background: rgba(255, 255, 255, 0.375); */
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    margin: auto;
+}
+
+/* skills bg */
+.hardskill{
+    background-color:  #ba9b89 ;
+}
+.softskill{
+    background-color:   #ba9b89  ;
+    display: flex;
+    align-items: flex-start;
+}
+.checked {
+    color: rgb(238, 255, 0);
+}
