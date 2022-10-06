@@ -29,3 +29,6 @@ function changeImage3() {
   document.getElementById('photo').src = "image/smu.JPG"
 }
 
+
+// for image under about me
+

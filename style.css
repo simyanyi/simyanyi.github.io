@@ -73,6 +73,9 @@ img {
     background-color:  #ba9b89;
     border: transparent;
 }
+.card{
+    border: transparent;
+}
 
 
 .sch_img {
@@ -99,6 +102,7 @@ h1 {
     font-family: 'Noto Sans', sans-serif;
     display: inline;
     font-size: 60px;
+    font-style: bold;
 }
 
 h2 {
